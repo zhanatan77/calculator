@@ -1,0 +1,131 @@
+body {
+  background-color: aqua;
+  background-color: rgba(0, 0, 255, 0.437);
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* The switch - the box around the slider */
+.switch {
+  font-size: 17px;
+  position: relative;
+  display: inline-block;
+  width: 3.5em;
+  height: 2em;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* HEADER */
+.header {
+  padding: 50px 0 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 45%;
+  margin: 0 auto;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  inset: 0;
+  border: 2px solid #414141;
+  border-radius: 50px;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 1.4em;
+  width: 1.4em;
+  left: 0.2em;
+  bottom: 0.2em;
+  background-color: white;
+  border-radius: inherit;
+  transition: all 0.4s cubic-bezier(0.23, 1, 0.320, 1);
+}
+.switch input:checked + .slider {
+  box-shadow: 0 0 20px rgba(9, 117, 241, 0.8);
+  border: 2px solid #0974f1;
+}
+.switch input:checked + .slider:before {
+  transform: translateX(1.5em);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* CART */
+
+.cart {
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.kalkulator{
+  width: 300px;
+  height: 530px;
+  background-color: rgb(20, 16, 91);
+  border-radius: 20px;
+}
+.block {
+  margin: 10px 10px  ;
+  border-radius: 16px;
+  width: 280px;
+  height: 100px;
+  background-color: white;
+}
+.block input {
+  border-radius: 16px;
+  width: 280px;
+  height: 100px;
+  background-color: white;
+}
+.kalkulator-title {
+  width: 290px;
+  height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.kalkulator-title button {
+  border: 3px solid white;
+  margin: 10px;
+  width: 45px;
+  height: 45px;
+  border-radius: 10px;
+  background-color: rgba(128, 128, 128, 0.789);
+  color: white;
+  font-weight: 900;
+  font-size: 20px;
+}
